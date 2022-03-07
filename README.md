@@ -1,5 +1,6 @@
 # scrypte-openvpn-link.py
 This crypt is made to initiate vpn link between a openvpn main server with one client.
+This script is under no licence and can be used free by anyone.
 
 Conditions :
 Openvpn must be installed on the master and the client.
