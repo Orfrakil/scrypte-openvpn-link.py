@@ -92,14 +92,12 @@ ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 ssh.connect(IPclient, 22, Uclient, MDPclient)
 stdin, stdout, stderr = ssh.exec_command(cmd14)
 cmd15 = "rm " + cmd13
-print (cmd15)
 ssh.connect(IPclient, 22, Uclient, MDPclient)
+stdin, stdout, sederr = ssh.exec_command(15)
 
 # établir la connection
-cmd16 = "cd /home/" + Uclient + "/" + Nclient
-cmd17 = "openvpn --config " + Nclient + ".ovpn"
+cmd16 = "openvpn --config " + "/home/" + Uclient + "/" + Nclient + "/" + Nclient + ".ovpn"
 ssh = paramiko.SSHClient()
 ssh.set_mission_host_key_policy(paramiko.AutoAddPolicy())
 ssh.connect(IPclient, 22, Uclient, MDPclient)
 stdin, stdout, stderr = ssh.exec_command(cmd16)
-dtdin, stdout, stderr = ssh.exec_command(cmd17)
